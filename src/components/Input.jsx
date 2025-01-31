@@ -16,7 +16,7 @@ const Input = forwardRef(function Input({label,textArea, ...props } , ref) {
   return (
     <div className="flex-col gap-1 my-4" >
            <label className='text-sm font-bold uppercase text-stone-700' >{label}</label>
-           { textArea ? <textarea className={classes} ref = {ref} /> : <input className={classes} ref = {ref}  /> }
+           { textArea ? <textarea className={classes} ref = {ref} {...props} /> : <input className={classes} ref = {ref} {...props} /> }
            
     </div>
     
